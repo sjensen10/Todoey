@@ -32,7 +32,15 @@
                             <outlet property="delegate" destination="esv-X1-Wdb" id="uhk-K2-pDM"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Todoey" id="tBr-CX-Yfy"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Todoey" id="tBr-CX-Yfy">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ssx-r9-3Q7">
+                            <connections>
+                                <action selector="addButtonPressed:" destination="esv-X1-Wdb" id="pBJ-z9-l1c"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Ka-bP-NL3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
