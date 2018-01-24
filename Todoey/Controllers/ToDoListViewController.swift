@@ -12,7 +12,7 @@ class TodoListViewController: UITableViewController {
     
     var itemArray = [Item]()
     
-    let defaults = UserDefaults.standard
+    // let defaults = UserDefaults.standard
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,10 +54,10 @@ class TodoListViewController: UITableViewController {
         
      
         
-        if itemArray[indexPath.row].done == true {
-            itemArray[indexPath.row].done = false
-        } else {
+        if itemArray[indexPath.row].done == false {
             itemArray[indexPath.row].done = true
+        } else {
+            itemArray[indexPath.row].done = false
         }
     
       
@@ -74,13 +74,13 @@ class TodoListViewController: UITableViewController {
         let alert = UIAlertController(title: "add new to do item", message: "", preferredStyle: .alert)
         
         let action = UIAlertAction(title: "Add item", style: .default) { (action) in
-            print(textField.text)
+            
             
             let newItem = Item()
             newItem.title = textField.text!
             self.itemArray.append(newItem)
             
-            self.defaults.set(self.itemArray, forKey: "TodolistArray")
+            // self.defaults.set(self.itemArray, forKey: "TodolistArray")
             
             self.tableView.reloadData()
             

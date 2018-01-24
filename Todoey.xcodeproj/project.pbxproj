@@ -13,6 +13,7 @@
 		556299B12017A4600033154A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 556299B02017A4600033154A /* Assets.xcassets */; };
 		556299B42017A4600033154A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 556299B22017A4600033154A /* LaunchScreen.storyboard */; };
 		55F80D5E2018CDC800326E97 /* item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F80D5D2018CDC800326E97 /* item.swift */; };
+		55F80D662018D81A00326E97 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55F80D652018D81A00326E97 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,8 +23,8 @@
 		556299AE2017A4600033154A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		556299B02017A4600033154A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		556299B32017A4600033154A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		556299B52017A4600033154A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = ../../Info.plist; sourceTree = "<group>"; };
 		55F80D5D2018CDC800326E97 /* item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = item.swift; sourceTree = "<group>"; };
+		55F80D652018D81A00326E97 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +57,7 @@
 		556299A82017A4600033154A /* Todoey */ = {
 			isa = PBXGroup;
 			children = (
+				55F80D652018D81A00326E97 /* Info.plist */,
 				556299A92017A4600033154A /* AppDelegate.swift */,
 				55F80D5F2018CE3D00326E97 /* Data Model  */,
 				55F80D602018CE9A00326E97 /* Controllers */,
@@ -84,8 +86,6 @@
 		55F80D612018CEB000326E97 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				556299B22017A4600033154A /* LaunchScreen.storyboard */,
-				556299B02017A4600033154A /* Assets.xcassets */,
 				556299AD2017A4600033154A /* Main.storyboard */,
 			);
 			path = Views;
@@ -94,7 +94,8 @@
 		55F80D622018CECC00326E97 /* Supporting files */ = {
 			isa = PBXGroup;
 			children = (
-				556299B52017A4600033154A /* Info.plist */,
+				556299B22017A4600033154A /* LaunchScreen.storyboard */,
+				556299B02017A4600033154A /* Assets.xcassets */,
 			);
 			path = "Supporting files";
 			sourceTree = "<group>";
@@ -158,6 +159,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55F80D662018D81A00326E97 /* Info.plist in Resources */,
 				556299B42017A4600033154A /* LaunchScreen.storyboard in Resources */,
 				556299B12017A4600033154A /* Assets.xcassets in Resources */,
 				556299AF2017A4600033154A /* Main.storyboard in Resources */,
